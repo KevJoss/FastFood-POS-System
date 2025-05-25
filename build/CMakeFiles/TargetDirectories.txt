@@ -1,0 +1,3 @@
+C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build/CMakeFiles/POS_System.dir
+C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build/CMakeFiles/edit_cache.dir
+C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build/CMakeFiles/rebuild_cache.dir

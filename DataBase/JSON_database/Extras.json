@@ -1,0 +1,36 @@
+{
+    "Extras": [
+        {
+            "name": "ENSALADA",
+            "price": 1.0
+        },
+        {
+            "name": "PORCION ARROZ",
+            "price": 1.25
+        },
+        {
+            "name": "PORCION BROSTER",
+            "price": 1.5
+        },
+        {
+            "name": "PORCION CARNE",
+            "price": 1.5
+        },
+        {
+            "name": "PORCION HUEVO",
+            "price": 0.5
+        },
+        {
+            "name": "PORCION MOLLEJA",
+            "price": 1.0
+        },
+        {
+            "name": "PORCION PAPAS",
+            "price": 1.25
+        },
+        {
+            "name": "PORCION SALCHICHA",
+            "price": 0.5
+        }
+    ]
+}

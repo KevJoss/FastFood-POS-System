@@ -1,0 +1,124 @@
+{
+    "Beverages": [
+        {
+            "name": "Jugo Mora",
+            "price": 1.0,
+            "flavor": "Mora"
+        },
+        {
+            "name": "Jugo Guanabana",
+            "price": 1.0,
+            "flavor": "Guanabana"
+        },
+        {
+            "name": "Batido Mora",
+            "price": 1.5,
+            "flavor": "Mora"
+        },
+        {
+            "name": "Batido Guanabana",
+            "price": 1.5,
+            "flavor": "Guanabana"
+        },
+        {
+            "name": "CocaCola 300ml",
+            "price": 0.7,
+            "volume": 0.3
+        },
+        {
+            "name": "CocaCola 500ml",
+            "price": 0.9,
+            "volume": 0.5
+        },
+        {
+            "name": "CocaCola 1lt",
+            "price": 1.35,
+            "volume": 1.0
+        },
+        {
+            "name": "CocaCola 1.3l",
+            "price": 1.75,
+            "volume": 1.3
+        },
+        {
+            "name": "Coca Cola Lata",
+            "price": 1.5,
+            "volume": 0.35
+        },
+        {
+            "name": "Sodas",
+            "price": 0.5,
+            "volume": 0.3
+        },
+        {
+            "name": "Sodas 500ml",
+            "price": 0.85,
+            "volume": 0.5
+        },
+        {
+            "name": "Sodas 1.3 litros",
+            "price": 1.5,
+            "volume": 1.3
+        },
+        {
+            "name": "Te 250ml",
+            "price": 0.5,
+            "volume": 0.25
+        },
+        {
+            "name": "Te 550ml",
+            "price": 0.85,
+            "volume": 0.55
+        },
+        {
+            "name": "Te 1 litro",
+            "price": 1.5,
+            "volume": 1.0
+        },
+        {
+            "name": "Squiz 300ml",
+            "price": 0.5,
+            "volume": 0.3
+        },
+        {
+            "name": "Pepsi 300ml",
+            "price": 0.5,
+            "volume": 0.3
+        },
+        {
+            "name": "Pepsi 1 litro",
+            "price": 0.85,
+            "volume": 1.0
+        },
+        {
+            "name": "Quintuple 300ml",
+            "price": 0.5,
+            "volume": 0.3
+        },
+        {
+            "name": "Quintuple 1 litro",
+            "price": 0.85,
+            "volume": 1.0
+        },
+        {
+            "name": "Tesalia Ice 500ml",
+            "price": 0.75,
+            "volume": 0.5
+        },
+        {
+            "name": "Agua 600ml",
+            "price": 0.75,
+            "volume": 0.6
+        },
+        {
+            "name": "Agua 1 litro",
+            "price": 0.9,
+            "volume": 1.0
+        },
+        {
+            "name": "Gaseosa en vaso",
+            "price": 0.25,
+            "volume": 0.2
+        }
+    ]
+}

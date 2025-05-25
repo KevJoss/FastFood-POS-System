@@ -1,0 +1,64 @@
+{
+    "Combos": [
+        {
+            "name": "COMBO 1 POLLO",
+            "price": 3.25,
+            "carryout": false
+        },
+        {
+            "name": "COMBO 1 POLLO",
+            "price": 3.5,
+            "carryout": true
+        },
+        {
+            "name": "COMBO 2 CARNE",
+            "price": 3.25,
+            "carryout": false
+        },
+        {
+            "name": "COMBO 2 CARNE",
+            "price": 3.5,
+            "carryout": true
+        },
+        {
+            "name": "COMBO DOBLE",
+            "price": 3.75,
+            "carryout": false
+        },
+        {
+            "name": "COMBO DOBLE",
+            "price": 4.0,
+            "carryout": true
+        },
+        {
+            "name": "COMBO UNICO",
+            "price": 3.0,
+            "carryout": false
+        },
+        {
+            "name": "COMBO UNICO",
+            "price": 3.25,
+            "carryout": true
+        },
+        {
+            "name": "COMBO FAMILIAR 6 PRESAS",
+            "price": 13.0,
+            "carryout": false
+        },
+        {
+            "name": "HAMBURGUESA SIMPLE",
+            "price": 3.5,
+            "carryout": false
+        },
+        {
+            "name": "HAMBURGUESA DOBLE",
+            "price": 5.0,
+            "carryout": false
+        },
+        {
+            "name": "HAMBURGUESA SOLA",
+            "price": 3.0,
+            "carryout": false
+        }
+    ]
+}
