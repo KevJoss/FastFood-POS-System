@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: POS_System
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -44,40 +49,47 @@ cmake_ninja_workdir = C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programm
 
 build cmake_object_order_depends_target_POS_System: phony || .
 
-build CMakeFiles/POS_System.dir/POS_System.cpp.obj: CXX_COMPILER__POS_System_unscanned_ C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/POS_System.cpp || cmake_object_order_depends_target_POS_System
+build CMakeFiles/POS_System.dir/POS_System.cpp.obj: CXX_COMPILER__POS_System_unscanned_Debug C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/POS_System.cpp || cmake_object_order_depends_target_POS_System
   DEP_FILE = CMakeFiles\POS_System.dir\POS_System.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs"
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database"
   OBJECT_DIR = CMakeFiles\POS_System.dir
   OBJECT_FILE_DIR = CMakeFiles\POS_System.dir
 
-build CMakeFiles/POS_System.dir/Menu_Items/Menu.cpp.obj: CXX_COMPILER__POS_System_unscanned_ C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Menu_Items/Menu.cpp || cmake_object_order_depends_target_POS_System
+build CMakeFiles/POS_System.dir/Menu_Items/Menu.cpp.obj: CXX_COMPILER__POS_System_unscanned_Debug C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Menu_Items/Menu.cpp || cmake_object_order_depends_target_POS_System
   DEP_FILE = CMakeFiles\POS_System.dir\Menu_Items\Menu.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs"
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database"
   OBJECT_DIR = CMakeFiles\POS_System.dir
   OBJECT_FILE_DIR = CMakeFiles\POS_System.dir\Menu_Items
 
-build CMakeFiles/POS_System.dir/Menu_Items/Menu_Items.cpp.obj: CXX_COMPILER__POS_System_unscanned_ C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Menu_Items/Menu_Items.cpp || cmake_object_order_depends_target_POS_System
+build CMakeFiles/POS_System.dir/Menu_Items/Menu_Items.cpp.obj: CXX_COMPILER__POS_System_unscanned_Debug C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Menu_Items/Menu_Items.cpp || cmake_object_order_depends_target_POS_System
   DEP_FILE = CMakeFiles\POS_System.dir\Menu_Items\Menu_Items.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs"
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database"
   OBJECT_DIR = CMakeFiles\POS_System.dir
   OBJECT_FILE_DIR = CMakeFiles\POS_System.dir\Menu_Items
 
-build CMakeFiles/POS_System.dir/Environment/Environment.cpp.obj: CXX_COMPILER__POS_System_unscanned_ C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Environment/Environment.cpp || cmake_object_order_depends_target_POS_System
+build CMakeFiles/POS_System.dir/Environment/Environment.cpp.obj: CXX_COMPILER__POS_System_unscanned_Debug C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Environment/Environment.cpp || cmake_object_order_depends_target_POS_System
   DEP_FILE = CMakeFiles\POS_System.dir\Environment\Environment.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs"
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database"
   OBJECT_DIR = CMakeFiles\POS_System.dir
   OBJECT_FILE_DIR = CMakeFiles\POS_System.dir\Environment
 
-build CMakeFiles/POS_System.dir/System_funcs/NewSale.cpp.obj: CXX_COMPILER__POS_System_unscanned_ C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/System_funcs/NewSale.cpp || cmake_object_order_depends_target_POS_System
+build CMakeFiles/POS_System.dir/System_funcs/NewSale.cpp.obj: CXX_COMPILER__POS_System_unscanned_Debug C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/System_funcs/NewSale.cpp || cmake_object_order_depends_target_POS_System
   DEP_FILE = CMakeFiles\POS_System.dir\System_funcs\NewSale.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs"
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database"
   OBJECT_DIR = CMakeFiles\POS_System.dir
   OBJECT_FILE_DIR = CMakeFiles\POS_System.dir\System_funcs
+
+build CMakeFiles/POS_System.dir/Final_Database/SaveOrders.cpp.obj: CXX_COMPILER__POS_System_unscanned_Debug C$:/Users/NW/Documents/QUINTO$ SEMESTRE/Advanced$ Programming/Final$ Project/POS_System/Final_Database/SaveOrders.cpp || cmake_object_order_depends_target_POS_System
+  DEP_FILE = CMakeFiles\POS_System.dir\Final_Database\SaveOrders.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs" -I"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database"
+  OBJECT_DIR = CMakeFiles\POS_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\POS_System.dir\Final_Database
 
 
 # =============================================================================
@@ -87,7 +99,8 @@ build CMakeFiles/POS_System.dir/System_funcs/NewSale.cpp.obj: CXX_COMPILER__POS_
 #############################################
 # Link the executable POS_System.exe
 
-build POS_System.exe: CXX_EXECUTABLE_LINKER__POS_System_ CMakeFiles/POS_System.dir/POS_System.cpp.obj CMakeFiles/POS_System.dir/Menu_Items/Menu.cpp.obj CMakeFiles/POS_System.dir/Menu_Items/Menu_Items.cpp.obj CMakeFiles/POS_System.dir/Environment/Environment.cpp.obj CMakeFiles/POS_System.dir/System_funcs/NewSale.cpp.obj
+build POS_System.exe: CXX_EXECUTABLE_LINKER__POS_System_Debug CMakeFiles/POS_System.dir/POS_System.cpp.obj CMakeFiles/POS_System.dir/Menu_Items/Menu.cpp.obj CMakeFiles/POS_System.dir/Menu_Items/Menu_Items.cpp.obj CMakeFiles/POS_System.dir/Environment/Environment.cpp.obj CMakeFiles/POS_System.dir/System_funcs/NewSale.cpp.obj CMakeFiles/POS_System.dir/Final_Database/SaveOrders.cpp.obj
+  FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\POS_System.dir
   POST_BUILD = cd .

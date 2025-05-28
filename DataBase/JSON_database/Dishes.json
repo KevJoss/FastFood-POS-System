@@ -1,49 +1,44 @@
 {
     "Dishes": [
         {
-            "name": "SALCHIPAPA PEQUENA",
+            "name": "SALCHIPAPA",
             "price": 1.0,
-            "carryout": false
-        },  
+            "price_carryout": 1.0
+        },
         {
             "name": "SALCHIPAPA GRANDE",
             "price": 1.5,
-            "carryout": false
+            "price_carryout": 1.5
         },
         {
-            "name": "PAPIPOLLO OCTAVO",
+            "name": "PAPIPOLLO",
             "price": 2.0,
-            "carryout": false
+            "price_carryout": 2.0
         },
         {
             "name": "PAPICARNE",
             "price": 2.0,
-            "carryout": false
+            "price_carryout": 2.0
         },
         {
-            "name": "PAPI MOLLEJA",
+            "name": "PAPIMOLLEJA",
             "price": 2.0,
-            "carryout": false
+            "price_carryout": 2.0
         },
         {
             "name": "PAPIHUEVO",
             "price": 1.5,
-            "carryout": false
+            "price_carryout": 1.5
         },
         {
-            "name": "CHAULAFAN PERSONAL",
+            "name": "CHAULAFAN",
             "price": 1.75,
-            "carryout": false
+            "price_carryout": 1.75
         },
         {
             "name": "CHAULAFAN AGRANDADO",
             "price": 3.75,
-            "carryout": false
-        },
-        {
-            "name": "CHAULAFAN AGRANDADO",
-            "price": 4.0,
-            "carryout": true
+            "price_carryout": 4.0
         }
     ]
 }

@@ -1,21 +1,22 @@
 #include "../Menu_Items/Menu.hpp"
 #include "../System_funcs/NewSale.hpp"
+#include "../Final_Database/SaverOrders.hpp"
 #include <iostream>
 #include <chrono>
 #include <thread>
 #include <iomanip>
 #include <vector>
-#define WIDTH 80
-#define TIME 600
+// #define WIDTH 80
 #define DISPLAY 4
 
+extern const int WIDTH = 80;
+extern const int TIME = 600;
 
 // General Function to center text in the console
 void CenterText(const std::string& text, int width) {
-    int padding = (width - text.size()) / 2; 
-    std::cout << std::setw(padding + text.size()) << text << std::endl;
+    int padding = (width > static_cast<int>(text.size())) ? (width - text.size()) / 2 : 0;
+    std::cout << std::string(padding, ' ') << text << std::endl;
 }
-
 // General Function to create a division line in the console
 void DivisionText(int width) {
     std::cout << std::setfill('-') << std::setw(width) << "-" << std::endl;
@@ -33,81 +34,92 @@ void JumpLine(int lines) {
 void SalesMenu(); 
 
 // Display the menu and return the selected option
-int DisplayMenu();
+void DisplayMenu();
 
 // Display the new sale menu
 void NewSale();
 
 void OrderList();
 
+void ProductsMenu();
+
 // Display general menu options
-int DisplayMenu(){
-    std::cout << "Inicio";
+void DisplayMenu(){
+    system("clear" " || cls"); // Clear the console
+    DivisionText(WIDTH);
+    CenterText("Gustav's Punto de Venta", WIDTH);
+    DivisionText(WIDTH);
+
+    std::string nombre = "Kevin";
+    CenterText("Bienvenido " + nombre, WIDTH);
+    DivisionText(WIDTH);
+    std::cout << "1) Listado de Pedidos";
     JumpLine(2);
-    std::cout << "Historial de ventas";
+    std::cout << "2) Estadisticas";
     JumpLine(2);
-    std::cout << "Estadisticas";
+    std::cout << "3) Productos";
     JumpLine(2);
-    std::cout << "Productos";
+    std::cout << "4) Realizar Venta";
     JumpLine(2);
-    std::cout << "Configuracion";
-    JumpLine(2);
-    std::cout << "Listado de Pedidos";
+    std::cout << "5) Finalizar dia";
     int Selection;
     std::cout << std::setw(WIDTH / 2) << "";
     std::cin >> Selection;
     switch (Selection) {
         case 1:
             DivisionText(WIDTH);
-            CenterText("TE ENCUENTRAS AQUI...", WIDTH);
-            DivisionText(WIDTH);
-            DisplayMenu();
-            return 1;
-        case 2:
-            DivisionText(WIDTH);
-            CenterText("ABRIENDO HISTORIAL DE VENTAS...", WIDTH);
+            CenterText("ABRIENDO LISTADO DE PEDIDOS...", WIDTH);
             std::this_thread::sleep_for(std::chrono::milliseconds(TIME));
-            DivisionText(WIDTH);
-            CenterText("Analisis de Ventas", WIDTH);
-            DivisionText(WIDTH);
-            return 2;
-        case 3:
+            ShowOrderAndWait();
+            return;
+        case 2:
             DivisionText(WIDTH);
             CenterText("ABRIENDO ESTADISTICAS...", WIDTH);
             std::this_thread::sleep_for(std::chrono::milliseconds(TIME));
             DivisionText(WIDTH);
             CenterText("Estadisticas", WIDTH);
             DivisionText(WIDTH);
-            return 3;
-        case 4:
+            std::cout << "\nPresione ENTER para volver al menu...";
+            std::cin.ignore();
+            std::cin.get();
+            DisplayMenu();  
+            return;
+        case 3:
             DivisionText(WIDTH);
             CenterText("ABRIENDO PRODUCTOS...", WIDTH);
             std::this_thread::sleep_for(std::chrono::milliseconds(TIME));
             DivisionText(WIDTH);
             CenterText("Productos", WIDTH);
             DivisionText(WIDTH);
-            return 4;
-        case 5:
+            ProductsMenu();
+            std::cout << "\nPresione ENTER para volver al menu...";
+            std::cin.ignore();
+            std::cin.get();
+            DisplayMenu();  
+            return;
+        case 4:
             DivisionText(WIDTH);
-            CenterText("ABRIENDO CONFIGURACION...", WIDTH);
+            CenterText("ABRIENDO VENTAS...", WIDTH);
             std::this_thread::sleep_for(std::chrono::milliseconds(TIME));
             DivisionText(WIDTH);
-            CenterText("Configuracion", WIDTH);
-            DivisionText(WIDTH);
-            return 5;
-        case 6:
-            DivisionText(WIDTH);
-            CenterText("ABRIENDO LISTADO DE PEDIDOS...", WIDTH);
-            std::this_thread::sleep_for(std::chrono::milliseconds(TIME));
-            DivisionText(WIDTH);
-            CenterText("Listado de Pedidos", WIDTH);
+            CenterText("Realizar Venta", WIDTH);
             DivisionText(WIDTH);
             OrderList();
-            return 6;
+            return;
+        case 5:
+            DivisionText(WIDTH);
+            CenterText("FINALIZANDO DIA...", WIDTH);
+            CenterText("Guardando pedidos...", WIDTH);
+            SaveOrdersToJSON("../DataBase/JSON_database/Orders.json");
+            std::this_thread::sleep_for(std::chrono::milliseconds(TIME));
+            CenterText("Archivo creado con exito", WIDTH);
+            DivisionText(WIDTH);
+            CenterText("Gracias por usar el sistema", WIDTH);
+            return;
         default:
             DivisionText(WIDTH);
             CenterText("Opcion no valida", WIDTH);
-            return 0;
+            return;
     }
 }
 
@@ -189,10 +201,8 @@ void ShowProducts(const std::vector<std::unique_ptr<Beverage>>& productos, int w
     std::cout << std::endl;
 }
 
-
-// New Sale Environment Selection
-void NewSale() {
-    CenterText("Platos Individuales", WIDTH);
+void ProductsMenu() {
+        CenterText("Platos Individuales", WIDTH);
     DivisionText(WIDTH);
     std::cout << std::left << '\n';
     ShowProducts(dishes);
@@ -204,6 +214,7 @@ void NewSale() {
     DivisionText(WIDTH);
     std::cout << std::left << '\n';
     ShowProducts(combos);
+    ShowProducts(wings);
     std::cout << '\n';
 
     std::cout.unsetf(std::ios::adjustfield);
@@ -223,18 +234,54 @@ void NewSale() {
     ShowProducts(beverages);
     std::cout << '\n';
     DivisionText(WIDTH);
+}
 
+
+// New Sale Environment Selection
+void NewSale() {
+    CenterText("Platos Individuales", WIDTH);
+    DivisionText(WIDTH);
+    std::cout << std::left << '\n';
+    ShowProducts(dishes);
     std::cout << '\n';
-    
-    NewSale_UI();
+
+    std::cout.unsetf(std::ios::adjustfield);
+    DivisionText(WIDTH);
+    CenterText("Combos", WIDTH);
+    DivisionText(WIDTH);
+    std::cout << std::left << '\n';
+    ShowProducts(combos);
+    ShowProducts(wings);
+    std::cout << '\n';
+
+    std::cout.unsetf(std::ios::adjustfield);
+    DivisionText(WIDTH);
+    CenterText("Extras", WIDTH);
+    DivisionText(WIDTH);
+    std::cout << std::left << '\n';
+    ShowProducts(extras);
+    std::cout << '\n';
+
+
+    std::cout.unsetf(std::ios::adjustfield);
+    DivisionText(WIDTH);
+    CenterText("Bebidas", WIDTH);
+    DivisionText(WIDTH);
+    std::cout << std::left << '\n';
+    ShowProducts(beverages);
+    std::cout << '\n';
+    DivisionText(WIDTH);
+    CenterText("Nuevo pedido", WIDTH);
+    DivisionText(WIDTH);
+    OrderLoop();
 }
 
 
 // Order List Environment 
 void OrderList(){
-    std::cout << "Nuevo pedido";
+    std::cout << "1) Nuevo pedido";
     JumpLine(2);
-    std::cout << "Volver al menu";
+    std::cout << "2) Volver al menu";
     int Selection;
     std::cout << std::setw(WIDTH / 2) << "";
     std::cin >> Selection;

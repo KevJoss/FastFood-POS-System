@@ -11,22 +11,24 @@ int ID::getID() const {
 
 // Class for Products
 Product::Product(const std::string& name, float price) : name(name), price(price), ID() {}
-std::string Product::getName() const {
-    return name;
-}
-float Product::getPrice() const {
-    return price;
-}
+
+    std::string Product::getName() const {
+        return name;
+    }
+    float Product::getPrice(bool) const {
+        return price;
+    }
 
 // Class for CarryOut Products
 CarryoutProduct::CarryoutProduct(const std::string& name, float price, float price_carryout, bool carryout)
     : Product(name, price), price_carryout(price_carryout), carryout(carryout) {}
-float CarryoutProduct::getPrice(bool carryout) const {
-    return carryout ? price_carryout : Product::getPrice();
-}
-bool CarryoutProduct::isCarryout() const {
-    return carryout;
-}
+
+    float CarryoutProduct::getPrice(bool carryout) const {
+        return carryout ? price_carryout : Product::getPrice();
+    }
+    bool CarryoutProduct::isCarryout() const {
+        return carryout;
+    }
 
 // Class for dishes
 Dish::Dish(const std::string& name, float price, float price_carryout, bool carryout)

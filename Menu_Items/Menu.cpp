@@ -6,30 +6,35 @@
 #include <nlohmann/json.hpp>
 using json = nlohmann::json;
 
-// Definición de los vectores globales
+// Global vectors to hold menu items
 std::vector<Dish> dishes;
 std::vector<Dish> combos;
 std::vector<Wings> wings;
 std::vector<Extra> extras;
 std::vector<std::unique_ptr<Beverage>> beverages;
 
+
+// Maps to store product IDs and their corresponding objects
+std::map<int, std::pair<std::shared_ptr<Product>, int>> IndividualOrder;
+
+using Products = std::map<int, std::pair<std::shared_ptr<Product>, int>>;
+
+std::map<std::pair<int, bool>, std::shared_ptr<Products>> GeneralMap;
+
 int TotalProducts = 0;
 
 // Loading fucntion for sales
-void LoadProduct(const json& j, const std::string& key, std::vector<Dish>& vec) {
+void LoadProduct(const nlohmann::json& j, const std::string& key, std::vector<Dish>& vec) {
     for (const auto& item : j[key]) {
         std::string name = item["name"];
         float price = item["price"];
-
-
         float price_carryout = item.contains("price_carryout") ? static_cast<float>(item["price_carryout"]) : price;
-        bool carryout = item.contains("carryout") ? static_cast<bool>(item["carryout"]) : false;
-        vec.emplace_back(name, price, price_carryout, carryout);
+        vec.emplace_back(name, price, price_carryout);
     }
 }
 
 void LoadMenu() {
-    // Limpia los vectores y reinicia el contador
+    // Clear previous data
     dishes.clear();
     combos.clear();
     wings.clear();

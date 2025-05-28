@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 /// SECTION TO MENUS AND BOTTOM NAVIGATION ///
+extern const int WIDTH;
+extern const int TIME;
 
 void CenterText(const std::string& text, int width);
 

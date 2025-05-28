@@ -21,7 +21,8 @@ private:
 public:
     Product(const std::string& name, float price);
     std::string getName() const;
-    float getPrice()const;
+    virtual float getPrice(bool carryout = false) const;
+    virtual ~Product() = default; 
 
 };
 
@@ -31,7 +32,7 @@ private:
     bool carryout;
 public:
     CarryoutProduct(const std::string& name, float price, float price_carryout, bool carryout=false);
-    float getPrice(bool carryout) const;
+    float getPrice(bool carryout = false) const override;
     bool isCarryout() const;
 };
 

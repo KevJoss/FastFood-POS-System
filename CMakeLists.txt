@@ -9,6 +9,7 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/Menu_Items
     ${PROJECT_SOURCE_DIR}/Environment
     ${PROJECT_SOURCE_DIR}/System_funcs
+    ${PROJECT_SOURCE_DIR}/Final_Database
 )
 
 # Archivos fuente principales
@@ -18,4 +19,5 @@ add_executable(POS_System
     Menu_Items/Menu_Items.cpp
     Environment/Environment.cpp
     System_funcs/NewSale.cpp
+    Final_Database/SaveOrders.cpp
 )

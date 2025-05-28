@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build",
+  "command": "C:\\Strawberry\\c\\bin\\g++.exe -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database\" -g -std=gnu++17 -o CMakeFiles\\POS_System.dir\\POS_System.cpp.obj -c \"C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\POS_System.cpp\"",
+  "file": "C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\POS_System.cpp",
+  "output": "CMakeFiles\\POS_System.dir\\POS_System.cpp.obj"
+},
+{
+  "directory": "C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build",
+  "command": "C:\\Strawberry\\c\\bin\\g++.exe -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database\" -g -std=gnu++17 -o CMakeFiles\\POS_System.dir\\Menu_Items\\Menu.cpp.obj -c \"C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Menu_Items\\Menu.cpp\"",
+  "file": "C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Menu_Items\\Menu.cpp",
+  "output": "CMakeFiles\\POS_System.dir\\Menu_Items\\Menu.cpp.obj"
+},
+{
+  "directory": "C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build",
+  "command": "C:\\Strawberry\\c\\bin\\g++.exe -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database\" -g -std=gnu++17 -o CMakeFiles\\POS_System.dir\\Menu_Items\\Menu_Items.cpp.obj -c \"C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Menu_Items\\Menu_Items.cpp\"",
+  "file": "C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Menu_Items\\Menu_Items.cpp",
+  "output": "CMakeFiles\\POS_System.dir\\Menu_Items\\Menu_Items.cpp.obj"
+},
+{
+  "directory": "C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build",
+  "command": "C:\\Strawberry\\c\\bin\\g++.exe -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database\" -g -std=gnu++17 -o CMakeFiles\\POS_System.dir\\Environment\\Environment.cpp.obj -c \"C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Environment\\Environment.cpp\"",
+  "file": "C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Environment\\Environment.cpp",
+  "output": "CMakeFiles\\POS_System.dir\\Environment\\Environment.cpp.obj"
+},
+{
+  "directory": "C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build",
+  "command": "C:\\Strawberry\\c\\bin\\g++.exe -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database\" -g -std=gnu++17 -o CMakeFiles\\POS_System.dir\\System_funcs\\NewSale.cpp.obj -c \"C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\System_funcs\\NewSale.cpp\"",
+  "file": "C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\System_funcs\\NewSale.cpp",
+  "output": "CMakeFiles\\POS_System.dir\\System_funcs\\NewSale.cpp.obj"
+},
+{
+  "directory": "C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/build",
+  "command": "C:\\Strawberry\\c\\bin\\g++.exe -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/include\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Menu_Items\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Environment\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/System_funcs\" -I\"C:/Users/NW/Documents/QUINTO SEMESTRE/Advanced Programming/Final Project/POS_System/Final_Database\" -g -std=gnu++17 -o CMakeFiles\\POS_System.dir\\Final_Database\\SaveOrders.cpp.obj -c \"C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Final_Database\\SaveOrders.cpp\"",
+  "file": "C:\\Users\\NW\\Documents\\QUINTO SEMESTRE\\Advanced Programming\\Final Project\\POS_System\\Final_Database\\SaveOrders.cpp",
+  "output": "CMakeFiles\\POS_System.dir\\Final_Database\\SaveOrders.cpp.obj"
+}
+]

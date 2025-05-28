@@ -15,13 +15,6 @@ int main() {
     // std::cout << "Bebidas cargadas: " << beverages.size() << std::endl;
     // std::cout << "Extras cargados: " << extras.size() << std::endl;
     // Display the welcome message and menu
-    DivisionText(WIDTH);
-    CenterText("Gustav's Punto de Venta", WIDTH);
-    DivisionText(WIDTH);
-
-    std::string nombre = "Kevin";
-    CenterText("Bienvenido " + nombre, WIDTH);
-    DivisionText(WIDTH);
 
     int Selection = DisplayMenu();
 

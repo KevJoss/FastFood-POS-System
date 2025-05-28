@@ -1,0 +1,41 @@
+{
+    "1": {
+        "carryout": true,
+        "productos": [
+            {
+                "cantidad": 2,
+                "id": 9,
+                "nombre": "COMBO 1",
+                "precio": 7.0
+            },
+            {
+                "cantidad": 1,
+                "id": 20,
+                "nombre": "ENSALADA",
+                "precio": 1.0
+            }
+        ]
+    },
+    "2": {
+        "carryout": true,
+        "productos": [
+            {
+                "cantidad": 8,
+                "id": 3,
+                "nombre": "PAPIPOLLO",
+                "precio": 16.0
+            }
+        ]
+    },
+    "3": {
+        "carryout": false,
+        "productos": [
+            {
+                "cantidad": 1,
+                "id": 29,
+                "nombre": "Jugo Guanabana",
+                "precio": 1.0
+            }
+        ]
+    }
+}
